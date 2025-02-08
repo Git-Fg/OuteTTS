@@ -37,7 +37,7 @@ This step involves preparing data where the model predicts completions based on 
 
 **Input:**
 ```text
-<|im_start|>
+<|im_end|>
 <|text_start|>this<|space|>is<|space|>a<|space|>test<|period|><|text_end|>
 <|audio_start|>
 ```
@@ -60,7 +60,7 @@ For speaker completion, fine-tune the model to adapt to a speaker's style by inc
 
 **Input:**
 ```text
-<|im_start|>
+<|im_end|>
 <|text_start|>this<|space|>is<|space|>a<|space|>test<|period|><|text_end|>
 <|audio_start|>
 this<|t_0.15|><|27|><|1789|><|379|><|1236|><|1465|><|1326|><|1584|><|889|><|183|><|1283|><|794|><|space|>
@@ -82,3 +82,7 @@ Because OuteTTS is built on a language model architecture, it can be tuned using
 - [TorchTune](https://github.com/pytorch/torchtune)
 - [Unsloth](https://github.com/unslothai/unsloth)
 - [Hugging Face Transformers Trainer](https://huggingface.co/docs/trl/sft_trainer)
+
+### Fine-Tuning for French TTS
+
+To fine-tune OuteTTS for French TTS, follow the steps outlined in the [Google Colab notebook](fine_tuning_french_tts.ipynb). This notebook provides comprehensive instructions for setting up the environment, preparing the data, training the model, and evaluating the results specifically for French TTS.
